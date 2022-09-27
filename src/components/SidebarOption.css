@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    height: 64px;
 }
 
 .sidebar__option:hover{
@@ -11,8 +12,8 @@
     transition: color 100ms ease;
 }
 
-.sidebar__option > .css-i4bv87-MuiSvgIcon-root{
-    padding: 20px;
+.sidebar__option > .MuiSvgIcon-root{
+    padding: 20px !important;
 }
 
 .sidebar__option--active{

@@ -4,6 +4,7 @@ import "./Feed.css";
 import Post from "./components/Post";
 import { collection, getDocs } from "firebase/firestore"
 import { db } from './firebase'
+import FlipMove from 'react-flip-move'
 
 const Feed = () => {
   const [posts, setPosts] = useState([]);
@@ -26,7 +27,7 @@ const Feed = () => {
       </div>
 
       <TweetBox />
-
+<FlipMove>
       {posts.map((post) => (
         <Post
           key={post.id}
@@ -38,6 +39,7 @@ const Feed = () => {
           verified={post.verified}
         />
       ))}
+</FlipMove>
     </div>
   );
 };
